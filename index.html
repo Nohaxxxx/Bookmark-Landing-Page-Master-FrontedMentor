@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<!--	fontsawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!--	googleFonts-->
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+<!--	css stylesheet-->
+	<link href="/main-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+<!--	Building the header-->
+<!--	flex-1-->
+	<header id="header">
+
+		<div class="logo"><img class="logo-img" src="images/logo-bookmark.svg" alt="logo-bookmark" /></div>
+<!-- icon-hamburger -->
+		<div class="menu-img"><img src="images/icon-hamburger.svg"/></div>
+<!-- icon-hamburger -->
+		<nav>
+
+			<a href="#Features" id="nav-1">Features</a>
+			<a href="#"> Pricing</a>
+			<a href="#Contact" id="nav-3">Contact</a>
+
+			<button class="login" type="button">Login</button>
+
+		</nav>
+
+
+	</header>
+
+<!-- mobile-nav-list-->
+
+	<section class="mobile-nav">
+
+		<div class="mobile-icons">
+			<a href="#"><img src="images/logo-bookmark-1.svg" class="logo"/></a>
+
+			<a href="#"><img src="images/icon-close.svg" class="close" /></a>
+
+		</div>
+
+		<nav class="menu">
+
+			<a href="#Features">features</a>
+			<a href="#">pricing</a>
+			<a href="#Contact">contact</a>
+		</nav>
+
+		<button class="login-btn">LOGIN</button>
+
+<!--		add the social icons-->
+
+		<div class="social">
+
+			  <a href="#"><i class="fab fa-facebook"></i></a>
+
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+		  </div>
+
+	</section>
+
+	<!-- mobile-nav-list-->
+
+<!--	flex-2-->
+	<section class="prt-1">
+
+		<div class="left-side">
+			<h1>A Simple Bookmark Manager</h1>
+			<p>A clean and simple interface to organize your favourite websites. Open a new
+  browser tab and see your sites load instantly. Try it for free.</p>
+			<div class="btns">
+			<button class="chrome get-btn" type="button"> Get it on Chrome</button>
+
+			<button class="firefox get-btn" type="button">Get it on Firefox</button>
+				</div>
+		</div>
+
+		<div class="img-container">
+
+			<img class="hero-img" src="images/illustration-hero.svg" alt="illustration-hero"/>
+
+			<div class="curved-background"></div>
+		</div>
+
+	</section>
+
+<!--	flex-3-->
+	<section id ="Features" class="features">
+		<div class="headline">
+			<h2> Features</h2>
+			<p>Our aim is to make it quick and easy for you to access your favourite websites.
+  Your bookmarks sync between your devices so you can access them on the go.</p>
+
+		</div>
+
+		<div class="titles">
+			<div class="title"><p class="simple clicked">Simple Bookmarking</p></div>
+
+			<div class="title"><p class="speedy active">Speedy Searching</p></div>
+
+			<div class="title"><p class="easy active">Easy Sharing</p></div>
+
+		</div>
+		<div class="tabs">
+			<div class="tab-1 visible">
+				<div class="container animated-img" id="contain-1">
+
+					<img class="img img-1" src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1" />
+
+					</div>
+				<div class=" text text-1 animated-txt">
+					<h2>Bookmark in one click</h2>
+					<p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+  gives you complete control over how you manage your favourite sites.</p>
+					<button type="button" class="more-btn">More Info</button>
+				</div>
+			</div>
+
+			<div class="tab-2">
+
+        <div class="container animated-img" id="contain-2">
+
+      	<img class=" img img-2" src="images/illustration-features-tab-2.svg" alt="illustration-features-tab-2" />
+
+      </div>
+
+				<div class=" text text-2 animated-txt">
+					<h2>Intelligent search</h2>
+					<p>Our powerful search feature will help you find saved sites in no time at all.
+  No need to trawl through all of your bookmarks.</p>
+					<button type="button" class="more-btn">More Info</button>
+				</div>
+			</div>
+
+			<div class="tab-3">
+
+        <div class="container animated-img" id="contain-3">
+
+				<img class=" img img-3" src="images/illustration-features-tab-3.svg" alt="illustration-features-tab-3" />
+
+      </div>
+
+        <div class= "text text-3 animated-txt">
+					<h2>Share your bookmarks</h2>
+					<p>Easily share your bookmarks and collections with others. Create a shareable
+  link that you can send at the click of a button.</p>
+					<button type="button" class="more-btn">More Info</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	flex-4-->
+	<section class="download-sec">
+
+		<div class="headline">
+			<h2>Download the extension</h2>
+			<p>  We’ve got more browsers in the pipeline. Please do let us know if you’ve
+  got a favourite you’d like us to prioritize.</p>
+		</div>
+
+		<div class="browsers">
+
+			<div class="chrome-add card">
+				<img src="images/logo-chrome.svg" alt="logo-chrome"/>
+
+				<ul>
+					<li> Add to Chrome</li>
+					<li> Minimum version 62</li>
+				</ul>
+
+				<img src="images/bg-dots.svg" alt="dotted-line" class="dotted-line" />
+
+				<button type="button" class="install-btn"> Add & Install Extension</button>
+
+			</div>
+			<div class="firefox-add card">
+				<img src="images/logo-firefox.svg" alt="logo-firefox"/>
+				<ul>
+					<li>Add to Firefox</li>
+					<li> Minimum version 55</li>
+				</ul>
+
+				<img src="images/bg-dots.svg" alt="dotted-line" class="dotted-line" />
+
+				<button type="button" class="install-btn">Add & Install Extension</button>
+
+			</div>
+			<div class="opera-add card">
+				<img src="images/logo-opera.svg" alt="logo-opera"/>
+				<ul>
+					<li>Add to Opera</li>
+					<li>Minimum version 46</li>
+				</ul>
+
+				<img src="images/bg-dots.svg" alt="dotted-line" class="dotted-line" />
+
+
+				<button type="button" class="install-btn">Add & Install Extension</button>
+
+			</div>
+		</div>
+	</section>
+
+<!--	flex-5-->
+	<section class="quests">
+
+		<div class="headline">
+			<h2>Frequently Asked Questions</h2>
+			<p>Here are some of our FAQs. If you have any other questions you’d like
+  answered please feel free to email us.</p>
+		</div>
+
+<!--		building the collapsible content-->
+
+		<div class="collapse quest-1">
+
+			<p>What is Bookmark?</p>
+			<button type="button" class="collapse-btn btn-1"><i class="fas fa-chevron-down"></i></button>
+
+		</div>
+
+		<div class="content content-1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+		</div>
+
+		<div class="collapse quest-2">
+
+			<p>How can I request a new browser?</p>
+			<button type="button" class="collapse-btn btn-2"><i class="fas fa-chevron-down"></i></button>
+
+		</div>
+
+		<div class="content content-2">
+			<p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+		</div>
+
+		<div class="collapse quest-3">
+
+			<p>Is there a mobile app?</p>
+			<button type="button" class="collapse-btn btn-3"><i class="fas fa-chevron-down"></i></button>
+
+		</div>
+
+		<div class="content content-3">
+			<p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+  sollicitudin ex et ultricies bibendum.</p>
+		</div>
+
+		<div class="collapse quest-4">
+
+			<p>What about other Chromium browsers?</p>
+			<button type="button" class="collapse-btn btn-4"><i class="fas fa-chevron-down"></i></button>
+
+		</div>
+
+		<div class="content content-4">
+			<p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+  vitae neque eget nisl gravida pellentesque non ut velit.</p>
+		</div>
+
+
+		<button type="button" class="more-btn">More Info</button>
+	</section>
+
+<!--	footer
+flex-6-->
+
+  <footer>
+
+	  <div id="Contact" class="contact">
+
+		  <p>35,000+ already joined</p>
+
+		  <h2>Stay up-to-date with what we’re doing</h2>
+
+		  <form>
+
+			  <div class="error">
+
+			  <input name="Email" type="email" placeholder="Enter your email address" class="email-input" required/>
+			  <p class="error-msg"> Whoops! make sure it's an email</p>
+			  </div>
+			  <button type="submit" class="contact-btn">Contact Us</button>
+
+		  </form>
+
+	  </div>
+
+	  <div class="footer-nav">
+
+		  <div class="footer-logo"><img src="images/logo-bookmark-1.svg" alt="bookmark-logo" /></div>
+
+		  <nav>
+
+			  <a href="#Features">features</a>
+			  <a href="#">pricing</a>
+			  <a href="#Contact">contact</a>
+		  </nav>
+
+		  <div class="social">
+			  <a href="#"><i class="fab fa-facebook"></i></a>
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+		  </div>
+
+	  </div>
+
+	  <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Noha M</a>.
+    </p>
+
+  </footer>
+
+	<script src="./script.js"></script>
+
+</body>
+
+</html>

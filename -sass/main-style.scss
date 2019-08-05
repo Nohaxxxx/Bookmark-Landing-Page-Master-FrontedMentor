@@ -1,0 +1,157 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+//variables
+
+    //colors
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+
+    //fonts
+
+$main-font: 'Rubik', sans-serif;
+$main-font-size: 18px;
+$heading-font-size: 24px;
+
+//media queries
+
+
+@mixin very-small-screen {
+
+	@media screen and (max-width: 451px)
+
+	{ @content; }
+}
+
+@mixin small-screen {
+
+	@media screen and (min-width: 451px) and (max-width: 551px)
+
+	{ @content; }
+
+}
+
+@mixin meduim-screen {
+
+	@media (min-width: 551px) and (max-width: 700px)
+
+	{ @content; }
+
+	
+}
+
+@mixin large-screen {
+
+	@media (min-width: 701px) and (max-width: 851px)
+
+	{ @content; }
+
+}
+
+@mixin larger-screen {
+	
+	@media (min-width: 852px) and (max-width: 1100px)
+		
+	{ @content; }
+}
+
+//General style
+
+html {
+
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+
+    font-family: $main-font;
+    font-size: $main-font-size;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+	
+	
+	@include very-small-screen  {
+		align-items: center;
+		justify-content: center;
+	}
+	
+	@include small-screen {
+		
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	@include meduim-screen {
+		
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+
+	h2 {
+
+		font-size: $heading-font-size;
+		
+
+	}
+
+	P {
+
+		@include very-small-screen {
+			
+			font-size: 14px;
+			
+			
+		}
+		
+		@include small-screen {
+			
+			font-size: 15px;
+		}
+		
+		@include meduim-screen {
+			
+			font-size: 16px;
+		}
+		
+		
+
+	}
+
+}
+
+
+
+
+//style for header
+
+@import '_header.scss';
+
+//style the first section
+
+@import '_section1.scss';
+
+// style for second section
+
+@import '_features.scss';
+
+
+@import '_download.scss';
+
+
+@import '_questions.scss';
+
+
+@import '_footer.scss';
+// style for mobile screens (max-width: 375px)

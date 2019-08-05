@@ -1,0 +1,301 @@
+.prt-1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 90px;
+	
+	@include very-small-screen {
+		
+		flex-direction: column-reverse;
+		align-items: center;
+		
+	}
+	
+	@include small-screen {
+		
+		flex-direction: column-reverse;
+	}
+	
+	@include meduim-screen {
+		
+		flex-direction: column-reverse;
+	}
+	
+	@include large-screen {
+		
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	
+
+    .left-side {
+
+        align-self: center;
+        padding-left: 70px;
+//		width: 45%;
+		
+		@include larger-screen {
+			
+			flex: 2;
+		
+		}	
+		
+		@include small-screen {
+			
+			padding: 0;
+			width: 80%;
+			text-align: center;
+			margin-top: 20px;	
+			
+		}
+		
+		@include very-small-screen {
+			
+			padding: 0;
+			width: 60%;
+			text-align: center;
+			margin-top: 20px;
+
+		}
+		
+		@include meduim-screen {
+			
+			padding: 0;
+			text-align: center;
+			margin: 20px auto 0 auto;
+		}
+		
+		@include large-screen {
+			
+			padding: 0;
+			text-align: center;
+			margin-top: 50px;
+			
+		}
+
+        h1 {
+
+            font-weight: 600;
+			font-size: 3vw;
+			width: 70%;
+			
+			@include small-screen {
+				
+				font-size: 5vw;
+				width: 90%;
+				padding-left: 10px;
+				
+				
+			}
+			
+			@include very-small-screen {
+				
+				font-size: 27px;
+				width: 100%;
+				
+			}
+			
+			@include meduim-screen {
+				
+				font-size: 30px;
+				width: 100%;
+				
+			}
+			
+			@include large-screen {
+				
+				font-size: 30px;
+				width: 100%;
+			}
+			
+        }
+
+        p {
+
+            max-width: 500px;
+            color: $grayish-blue;
+            margin: 20px 0 20px 0;
+			
+			@include very-small-screen  {
+				
+				width: 100%;
+				
+			}
+			
+			@include meduim-screen {
+				
+				width: 100%;
+			}
+			
+        }
+		
+		.btns {
+			
+			@include very-small-screen {
+				
+				display: flex;
+				flex-direction: row;
+				
+				.get-btn {
+					
+					font-size: 12px;
+					padding: 0 3px;
+				}
+			}
+		}
+		
+        .get-btn {
+
+			width: 140px;
+			height: 40px;
+			border-radius: 7px;
+			border-style: solid;
+			font-weight: 600;
+			margin-top: 20px;
+			
+			
+			
+
+		}
+
+        .chrome {
+
+			background-color: $soft-blue;
+			border-color: $soft-blue;
+			color: white;
+
+		}
+
+        .chrome:hover {
+
+			background-color: white;
+			color: $soft-blue;
+			cursor: pointer;
+		}
+
+		.firefox {
+
+			color: $very-dark-blue;
+			background-color: whitesmoke;
+			border-color: whitesmoke;
+			margin-left: 10px;
+		}
+
+		.firefox:hover {
+
+			background-color: white;
+			border-color: $very-dark-blue;
+			cursor: pointer;
+		}
+
+
+    }
+
+    .img-container {
+
+        width: 100%;
+        position: relative;
+		top: 0;
+		bottom: 0;
+        flex: 2;
+        overflow: hidden;
+		padding: 0 0 100px 0;
+		
+		@include larger-screen {
+			
+			flex: 2;
+			padding: 0 0 190px 0;
+			margin-top: 100px;
+			
+		}
+		
+		@include small-screen {
+			
+			height: 100%;
+			width: 100%;
+			padding: 0 10px 50px 10px;
+			
+		}
+		
+		@include very-small-screen {
+			
+			padding: 40px 10px 60px 0;
+	
+		}
+		
+		@include meduim-screen {
+			
+			padding: 40px 10px 60px 0;
+			width: 100%;
+		}
+		
+		@include large-screen {
+			
+			padding: 40px 10px 50px 0;
+				
+			
+		} 
+		
+
+        .curved-background {
+
+            background-color: $soft-blue;
+			width: 75%;
+//			max-height: 100px;
+			height: 350px;
+            z-index: -1;
+            position: absolute;
+            top: 120px;
+			right: 0;
+            border-bottom-left-radius: 180px;
+			
+			@include larger-screen  {
+				
+				width: 80%;
+				max-height: 55%;
+				border-bottom-left-radius: 140px;
+				top: 90px;
+			}
+			@include small-screen {
+				
+				top: 60px;
+				right: 0px;
+				height: 70%;
+				width: 80%;
+				border-bottom-left-radius: 100px;
+				
+			}
+			
+			@include very-small-screen {
+				width: 80%;
+				top: 100px;
+				height: 220px;
+				border-bottom-left-radius: 90px;
+	
+			}
+			
+			@include meduim-screen {
+				
+				width: 80%;
+				height: 320px;
+			}
+			
+			@include large-screen {
+				
+				width: 85%;
+				height: 390px;
+			}
+			
+
+        }
+
+
+        .hero-img {
+
+            max-width: 100%;
+		
+        }
+    }
+}

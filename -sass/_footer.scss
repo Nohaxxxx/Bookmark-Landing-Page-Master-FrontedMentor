@@ -1,0 +1,503 @@
+footer {
+
+	background-color: $very-dark-blue;
+	width: auto;
+	margin: 130px 0 0;
+
+	@include meduim-screen {
+		
+		width: 100%;
+	}
+
+  .contact {
+
+		background-color: $soft-blue;
+		color: white;
+		text-align: center;
+		padding: 60px 0 70px;
+
+
+    p {
+
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 1vw;
+		
+		@include very-small-screen {
+
+			font-size: 13px;
+
+		}
+		
+		@include small-screen {
+			
+			font-size:14px;
+				
+		}
+		
+		@include meduim-screen {
+		  
+		 	font-size: 14px;
+	  }
+		
+		@include large-screen {
+			
+			font-size: 15px;
+		}
+		
+		@include larger-screen {
+			
+			font-size: 14px;
+
+		}
+
+    }
+
+    h2 {
+
+      width: 400px;
+      margin: 30px auto;
+      letter-spacing: 2px;
+
+		@include very-small-screen {
+
+			font-size: 25px;
+			width: 90%;
+		}
+		
+		@include small-screen {
+			
+			font-size: 25px;
+			width: 90%;
+		}
+		
+		@include meduim-screen {
+			
+			font-size: 26px;
+		}
+    }
+
+    form {
+
+      display: flex;
+      justify-content: center;
+		flex-direction: row;
+
+		@include very-small-screen {
+
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		}
+		
+		@include small-screen {
+			
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+//			.error {
+//
+//				background-color: $Soft-Red;
+//				width: 270px;
+//				border-radius: 4px;
+//  }
+//
+
+      input {
+
+        width: 265px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: white;
+        padding: 0 10px;
+        font-size: 15px;
+        font-family: $main-font;
+        margin: 1px;
+
+
+      }
+		.contact-btn:hover {
+
+			cursor: pointer;
+		}
+      .contact-btn {
+
+        width: 110px;
+        height: 45px;
+        border-radius: 5px;
+        border-style: solid;
+        background-color: $soft-red;
+        border-color: $soft-red;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 30px;
+
+		   @include very-small-screen {
+
+			   width: 290px;
+			   margin: 20px 0 0 0;
+
+		  }
+		  
+		  @include small-screen {
+			  
+			width: 290px;
+			margin: 20px 0 0 0;
+		  }
+
+
+      }
+    }
+
+    .error {
+
+
+      p {
+		  
+
+
+			letter-spacing: normal;
+			text-transform: none;
+			font-style: italic;
+			font-size: 1vw;
+			padding: 60px 0 0 0;
+			background-color: $soft-red;
+      		width: 290px;
+			height: 20px;
+			border-style: solid;
+			border-color: $soft-red;
+			border-radius: 4px;
+			text-align: center;
+			z-index: -1;
+			margin: -55px 0 0 0;
+			visibility: hidden;
+			transition: visibility .2s linear;
+
+		  @include very-small-screen {
+
+			  font-size: 11px;
+
+		}
+		  
+		  @include small-screen {
+			  
+			  font-size: 11px;
+		  }
+		  
+		  @include meduim-screen {
+			  
+			  font-size: 12px;
+		  }
+		  
+		  @include large-screen {
+			  
+			  font-size: 12px;
+		  }
+		  
+		  @include larger-screen {
+			  
+			  font-size: 12px;
+		  }	
+
+      }
+
+    }
+  }
+
+  .footer-nav {
+
+		padding-top: 30px;
+		display: flex;
+		flex-direction: row;
+	 
+	  @include larger-screen {
+		  
+		  flex-direction: column;
+		  align-items: center;
+		}
+	  
+	  @include very-small-screen {
+
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+
+
+	  }
+	  
+	  @include small-screen {
+		  
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		 
+	  }
+	  
+	  @include large-screen {
+		  
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+	  }
+
+    img {
+
+			margin-left: 100px;
+
+		@include very-small-screen {
+
+			margin: 0;
+		}
+		
+		@include small-screen {
+			
+			margin: 0;
+		}
+		
+		@include meduim-screen {
+			
+			margin: 0;
+		}
+		
+		@include large-screen {
+			margin: 0;
+		}
+		
+		@include larger-screen {
+			
+			margin: 0;
+		}	
+
+		}
+
+		nav {
+
+			margin: 0 0 0 80px;
+
+			@include very-small-screen {
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 20px 0 0 0;
+			}
+			
+			@include small-screen {
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 20px 0 0 0;
+			}
+			
+			@include meduim-screen {
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 20px 0 0 0;
+			}
+			
+			@include large-screen {
+				
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: 20px 0 0 0;
+				justify-content: space-around;
+			}
+			
+			@include larger-screen {
+				
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				margin: 20px 0 0 0;
+			}	
+
+			a {
+
+				text-decoration: none;
+				color: whitesmoke;
+				font-size: 1vw;
+				text-transform: uppercase;
+				padding: 0 20px;
+				letter-spacing: 3px;
+
+				@include very-small-screen {
+
+					padding: 10px 0;
+					font-size: 13px;
+				}
+				
+				@include small-screen {
+					
+					padding: 10px 0;
+					font-size: 13px;
+				}
+				
+				@include meduim-screen {
+					
+					padding: 10px 0;
+					font-size: 14px;
+				}
+				
+				@include large-screen {
+					
+//					padding: 10px 50px;
+					margin: 20px 0 20px 20px;
+					font-size: 16px;
+				}
+				
+				@include larger-screen {
+					
+					margin: 20px 0 20px 20px;
+					font-size: 16px;
+				}
+
+			}
+
+			a:hover {
+
+				color: $soft-red;
+				cursor: pointer;
+			}
+
+    }
+
+  }
+
+  .social {
+
+    margin-left: 360px;
+
+	  @include very-small-screen {
+
+		  margin: 0;
+	  }
+	  
+	  @include small-screen {
+		  
+		  margin: 0;
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  margin: 0;
+	  }
+	  
+	  @include large-screen {
+		  
+		  margin: 0;
+	  }
+	  
+	  @include larger-screen {
+		  
+		  margin: 0;
+		}
+
+    i {
+
+      padding: 0 10px;
+      color: white;
+      font-size: 2vw;
+
+		@include very-small-screen {
+
+			font-size: 25px;
+			padding: 20px 20px;
+		}
+		
+		@include small-screen {
+			
+			font-size: 25px;
+			padding: 20px;
+		}
+		
+		@include meduim-screen {
+			
+			font-size: 26px;
+			padding: 18px;
+		}
+		
+		@include large-screen {
+			
+			font-size: 26px;
+			padding: 18px;
+			
+		}
+		
+		@include larger-screen {
+			
+			font-size: 26px;
+			padding: 20px;
+		}
+    }
+
+    i:hover {
+
+        color: $soft-red;
+        cursor: pointer;
+      }
+  }
+
+  .attribution {
+
+		font-size: 1.2vw;
+		color: whitesmoke;
+		text-align: right;
+		margin: 10px 0 0;
+		padding: 0 10px 10px 0;
+
+	  @include very-small-screen {
+
+		  font-size: 11px;
+	  }
+	  
+	  @include small-screen {
+		  
+		  font-size: 11px;
+		  padding-bottom: 10px;
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  font-size: 12px;
+	  }
+	  
+	  @include large-screen {
+		  
+		  font-size: 12px;
+	  }
+	  @include larger-screen {
+		  
+		  font-size: 12px;
+	  }
+
+		a {
+
+			color: $soft-blue;
+			text-decoration: none;
+
+		}
+
+		a:hover {
+
+			color: whitesmoke;
+		}
+	}
+}

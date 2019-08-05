@@ -1,0 +1,987 @@
+.features {
+
+	margin-top: 130px;
+	//mobile style
+	
+	
+	
+	@include very-small-screen {
+
+		margin-top: 100px;
+	}
+	
+		
+	@include large-screen {
+		
+		margin-top: 100px;
+		
+	}
+	
+	@include larger-screen {
+		
+		margin-top: 0;
+	}
+	
+	//mobile style
+
+    .headline {
+
+        width: 43%;
+        text-align: center;
+        margin: 0 auto;
+		//mobile style
+		
+		@include larger-screen {
+			
+			width: 50%;
+		}
+		
+		@include small-screen {
+		
+			width: 85%;
+			
+		}
+		
+		@include very-small-screen {
+
+			width: 70%;
+		}
+		@include meduim-screen {
+			
+			width: 75%;
+		}
+			
+		@include large-screen {
+			
+			width: 90%;
+		}
+
+		//mobile style
+
+		h2 {
+
+			font-size: 2.5vw;
+			font-weight: 600;
+			//mobile style
+			
+			@include small-screen {
+				
+				font-size:  25px;
+				
+			}
+
+			@include very-small-screen {
+
+				font-size: 25px;
+				width: 100%;
+			}
+			
+			@include meduim-screen {
+				
+				font-size: 26px;
+				width: 100%;
+			}
+			
+				
+			@include large-screen {
+				
+				font-size: 26px;
+			}
+		//mobile style
+
+		}
+	}
+
+        p {
+			color: $grayish-blue;
+			margin-top: 30px;
+
+        }
+
+    }
+
+    .titles {
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px auto;
+        padding: 0 30px;
+//        border-bottom-style: solid;
+//        border-bottom-color: lightgrey;
+        width: 100%;
+        color: $grayish-blue;
+		//mobile style
+		
+		@include larger-screen {
+			
+			margin: 0 auto;
+			padding: 0;
+		}
+		
+		@include small-screen {
+			
+			flex-direction: column;
+			align-items: center;
+			padding: 0;
+			justify-content: flex-start;
+			
+			
+		}
+		
+		@include very-small-screen {
+
+			flex-direction: column;
+			align-items: center;
+			padding: 0;
+			justify-content: flex-start;
+
+
+		}
+		
+		@include meduim-screen {
+			
+			flex-direction: column;
+			align-items: center;
+			padding: 0;
+			justify-content: center;
+			
+		}
+		
+		@include large-screen {
+			
+			margin: 20px auto;
+			
+			width: 100%;
+
+			
+		}
+		
+		
+
+//mobile style
+
+        .title {
+
+          	border-bottom-style: solid;
+    		border-bottom-color: lightgray;
+    		border-bottom-width: 1.5px;
+
+			//mobile style
+			
+			@include small-screen {
+				
+				width: 70%;
+				text-align: center;
+				
+				padding: 0;
+				
+				p {
+
+					margin: 10px auto 0;
+					width: 70%;
+					font-size: 4vw;
+					overflow: hidden;
+				}
+			}
+
+			@include very-small-screen {
+
+				width: 85%;
+				text-align: center;
+				padding: 0;
+				border-style: solid;
+				border-color: lightgray;
+				border-width: 1.5px;
+				border-right-style: none;
+				border-left-style: none;
+
+				p {
+
+					margin: 10px auto 0;
+					width: 50%;
+					font-size: 4vw;
+
+				}
+
+			}
+			
+			@include meduim-screen {
+				
+				width: 80%;
+				text-align: center;
+				padding: 0;
+				
+				p {
+
+					margin: 10px auto 0;
+					width: 70%;
+					font-size: 22px;
+
+				}
+			}
+			
+			@include large-screen {
+				
+				padding-right: 10px;
+				
+				p {
+
+					margin: 10px auto 0;
+					width: 100%;
+
+				}
+				
+				
+			}
+			//mobile style
+
+      p {
+
+					padding: 0 20px;
+					font-weight: 600;
+					line-height: 50px;
+
+
+      }
+
+			p:hover {
+
+				cursor: pointer;
+			}
+
+    }
+
+	//add the animation to the bottom border
+
+	.active::after {
+
+    	transition: all ease-in-out .2s;
+    	background: none repeat scroll 0 0 $soft-red;
+    	content: "";
+    	display: block;
+    	height: 6px;
+    	width: 0;
+
+	}
+
+	.active:hover::after {
+
+		width: 100%;
+
+	}
+
+	.active:hover {
+
+		border-style: none;
+		color: $soft-red;
+		cursor: pointer;
+	}
+
+	.clicked {
+
+		border-bottom-style: solid;
+    	color: $very-dark-blue;
+    	border-bottom-color: $soft-red;
+    	border-bottom-width: 6px;
+
+    }
+
+	//add the animation to the bottom border
+
+	.speedy, .easy {
+
+        margin-left: 70px;
+			//mobile style
+
+		@include very-small-screen {
+
+				margin: 0;
+			}
+
+			//mobile style
+        }
+
+    }
+
+// tabs style
+
+    .tabs {
+
+      	.tab-1, .tab-2, .tab-3 {
+
+        display: none;
+
+      }
+
+			.container {
+
+				transform: translateX(-450px);
+
+			}
+
+			.text {
+
+				flex: 1;
+				transform: translateX(510px);
+
+        p {
+
+            	color: $grayish-blue;
+            	max-width: 450px;
+        }
+
+      .more-btn {
+
+			  	width: 120px;
+			  	height: 50px;
+			  	border-radius: 5px;
+			  	border-style: solid;
+			  	background-color: $soft-blue;
+			  	border-color: $soft-blue;
+			  	color: white;
+			  	font-family: $main-font;
+			  	font-size: 14px;
+			  	font-weight: 600;
+					margin-top: 50px;
+
+  			}
+
+      }
+
+			//animated tab
+			.animated-txt {
+
+				animation: slidingText .5s ease-in-out;
+				transform: translateX(0%);
+			}
+
+			.animated-img {
+
+				animation: slidingImg .5s ease-in-out;
+				transform: translateX(0%);
+
+			}
+
+		@keyframes slidingText {
+
+			from {transform: translateX(515px);}
+			to {transform: translateX(0%);}
+
+		}
+
+		@keyframes slidingImg {
+
+			from {transform: translateX(-700px);}
+
+			to {transform: translateX(0%);}
+		}
+
+			//animated tab
+
+			.visible {
+				
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+
+
+				
+				
+			@include very-small-screen {
+
+				flex-direction: column;
+
+			}
+				
+			@include small-screen {
+					
+					flex-direction: column;
+				}
+				
+			@include meduim-screen {
+					
+					flex-direction: column;
+				
+				}
+				
+			@include large-screen {
+				
+				flex-direction: column;
+			
+					
+					
+			}
+
+      	}
+
+      	.tab-1 {
+
+			@include very-small-screen {
+
+					.text {
+
+						width: 65%;
+						text-align: center;
+
+
+						h2 {
+
+							font-size: 25px;
+
+						}
+
+			  			p {
+
+							line-height: 18px;
+							
+
+			  			}
+
+						.more-btn {
+
+							width: 100px;
+							height: 40px;
+
+			  			}
+		  			}
+				}
+			
+			@include small-screen {
+				
+				
+				.text {
+
+						width: 85%;
+						text-align: center;
+					
+
+						h2 {
+
+							font-size: 25px;
+
+						}
+
+			  			p {
+
+							line-height: 18px;
+							overflow: hidden;
+														
+
+			  			}
+
+						.more-btn {
+
+							width: 100px;
+							height: 40px;
+
+			  			}
+		  			}
+	
+			}
+			
+			@include meduim-screen {
+				
+				.text {
+					
+					width: 80%;
+					text-align: left;
+					margin-top: 20px;
+					
+					h2 {
+						
+						font-size: 26px;
+					}
+					
+					p {
+						
+						line-height: normal;
+						overflow: hidden;
+					}
+					
+					.more-btn {
+						
+						width: 100px;
+						height: 40px;
+					}
+				}
+				
+			}
+			
+			@include large-screen {
+				
+				.text {
+					
+					width: 80%;
+					text-align: left;
+					margin-top: 20px;
+					
+					h2 {
+						
+						font-size: 26px;
+					}
+					
+					p {
+						
+						line-height: normal;
+						overflow: hidden;
+					}
+					
+					
+				}
+				
+				
+			}
+			
+			
+			.container::after {
+				
+
+
+				content: "";
+            	background-color: $soft-blue;
+            	width: 75%;
+            	height: 350px;
+            	z-index: -1;
+            	position: absolute;
+				top: 180px;
+				left: 0;
+            	border-bottom-right-radius: 200px;
+				
+				@include larger-screen {
+				
+					width: 70%;
+					height: 250px;
+					border-bottom-right-radius: 140px;
+					
+				}	
+				@include very-small-screen {
+
+					top: 160px;
+					left: 0;
+					width: 80%;
+					height: 210px;
+            		border-bottom-right-radius: 120px;
+
+				}
+				
+				@include small-screen {
+					
+					width: 85%;
+					height: 45%;
+					border-bottom-right-radius: 120px;
+
+					
+				}
+				
+				@include meduim-screen {
+					
+					width: 75%;
+					max-height: 55%;
+					
+				}
+				
+				@include large-screen {
+					
+					width: 70%;
+					
+				}
+				
+				
+			}
+
+
+        	.container {
+
+				position: relative;
+				flex: 1;
+				width: 100%;
+				padding: 100px 130px 100px 100px;
+				overflow: hidden;
+
+				//mobile style
+				
+				@include larger-screen {
+					
+					padding-bottom: 180px;
+					
+				}
+				
+				@include small-screen {
+					
+					width: 80%;
+					padding: 120px 30px 120px 80px;
+					
+						
+				}
+				
+				@include very-small-screen {
+
+
+					width: 85%;
+					padding: 120px 50px 120px 58px;
+
+				}
+				
+				@include meduim-screen {
+					
+					width: 80%;
+				}
+				
+				@include large-screen {
+						
+					width: 80%;
+					
+				}
+
+				//mobile style
+
+				.img {
+
+					max-width: 100%;
+					
+				
+
+				}
+
+        }
+      }
+
+      .tab-2 {
+
+        .container::after {
+
+
+			content: "";
+            background-color: $soft-blue;
+            width: 77%;
+            height: 300px;
+            z-index: -1;
+            position: absolute;
+			top: 150px;
+			left: 0;
+            border-bottom-right-radius: 200px;
+			border-top-right-radius: 200px;
+			
+			@include larger-screen {
+				
+				width: 80%;
+				height: 250px;
+			}
+			@include very-small-screen {
+
+				top: 120px;
+				left: 0;
+				width: 75%;
+				height: 220px;
+            	border-bottom-right-radius: 120px;
+
+
+			}
+			
+			@include small-screen {
+				
+				height: 55%;
+				top: 120px;
+			}
+			
+			@include meduim-screen {
+				
+				height: 60%;
+				
+			}
+			
+			@include large-screen {
+						
+				height: 65%;
+				width: 70%;
+			}
+						
+			
+		}
+
+        	.container {
+
+				position: relative;
+				flex: 1;
+				width: 100%;
+				padding: 70px 100px 70px 70px;
+				overflow: hidden;
+				
+				@include larger-screen {
+					
+					padding-bottom: 120px;
+					
+				}
+				
+				@include small-screen {
+					
+					padding: 70px 120px 130px 0px;
+					width: 90%;
+		
+				}
+				
+				@include very-small-screen {
+
+					padding: 70px 170px 70px 0;
+					width: 95%;
+				}
+				
+				@include meduim-screen {
+				
+					width: 90%;
+					padding: 70px 150px 70px 0;
+				} 
+
+				.img {
+
+					position: relative;
+					top: 0;
+					left: 160px;
+					max-width: 75%;
+					overflow: hidden;
+
+				}
+      }
+
+		  .text {
+			  
+			  @include small-screen {
+					
+				  text-align: center;
+				  width: 80%;
+				  
+				  h2 {
+					  
+					  font-size: 25px;
+				  }
+				  
+				  .more-btn {
+
+					width: 100px;
+					height: 40px;
+					  
+			  		}
+				  
+			  }
+			  
+			
+			  @include very-small-screen {
+
+				  	text-align: center;
+				  	width: 65%;
+
+					h2 {
+
+						font-size: 25px;
+
+					}
+
+			  		p {
+
+						line-height: 18px;
+
+			  		}
+
+				.more-btn {
+
+				width: 100px;
+				height: 40px;
+
+			  	}
+		  	}
+			  
+			   @include meduim-screen {
+				  
+				   h2 {
+					   
+					   font-size: 26px;
+				   }
+				   
+				   .more-btn {
+
+					width: 100px;
+					height: 40px;
+
+			  		}
+			  }
+			  
+			  @include large-screen {
+				  
+				  h2 {
+					   
+					   font-size: 26px;
+				   }
+				   
+				   
+			  }
+
+		  }
+
+
+		  }
+
+      .tab-3 {
+
+
+		  .container::after {
+
+
+					content: "";
+            		background-color: $soft-blue;
+            		width: 77%;
+            		height: 300px;
+            		z-index: -1;
+            		position: absolute;
+					top: 150px;
+					left: 0;
+            		border-bottom-right-radius: 200px;
+			  		border-top-right-radius: 200px;
+			 
+			  @include larger-screen {
+				  
+				  width: 70%;
+				  height: 230px;
+			  }
+			  @include very-small-screen {
+
+				  	height: 240px;
+				  	width: 80%;
+
+
+			  }
+			  
+			  @include small-screen {
+				  
+				  height: 240px;
+				  width: 70%;
+				  
+				  
+			  }
+			  
+			  @include large-screen {
+				  
+				  height: 350px;
+				  width: 60%;
+			  }
+		}
+
+        	.container {
+
+				position: relative;
+				flex: 1;
+				width: 100%;
+				padding: 70px 100px 70px 70px;
+				overflow: hidden;
+				@include larger-screen {
+					
+					padding-bottom: 100px;
+				}
+				@include very-small-screen {
+
+					padding: 100px 70px 100px 0px;
+
+			  	}	
+				
+				
+
+				.img {
+
+					position: relative;
+					top: 0;
+					left: 110px;
+					max-width: 75%;
+					overflow: hidden;
+
+				}
+      }
+
+		  .text {
+			  
+			  @include small-screen {
+				  
+				  width: 90%;
+				  text-align: center;
+				  
+				  h2 {
+
+					  font-size: 5vw;
+				  }
+				  
+				  .more-btn {
+
+						width: 100px;
+						height: 40px;
+
+			  	}
+
+			  }
+
+			  @include very-small-screen {
+
+				  width: 65%;
+				  text-align: center;
+
+				  h2 {
+
+					  font-size: 5vw;
+				  }
+
+				  p {
+
+					  line-height: 18px;
+						margin-bottom: 0;
+
+
+				  }
+
+				  .more-btn {
+
+						width: 100px;
+						height: 40px;
+
+			  	}
+
+			  }
+			  
+			  
+			   @include meduim-screen {
+				  
+				   h2 {
+					   
+					   font-size: 26px;
+				   }
+				   
+				   .more-btn {
+
+					width: 100px;
+					height: 40px;
+
+			  		}
+			  }
+			  
+			  @include large-screen {
+				  
+				  h2 {
+					   
+					   font-size: 26px;
+				   }
+				   
+			  }
+
+			  p {
+
+				  margin-top: 25px;
+			  }
+
+			  .more-btn {
+
+				  margin-top: 50px;
+			  }
+		  }
+
+      }
+
+}

@@ -1,0 +1,304 @@
+.download-sec {
+
+	margin-top: 130px;
+	
+	
+
+	@include very-small-screen {
+
+		margin-top: 110px;
+	}
+	
+	@include larger-screen {
+		
+		margin-top: 100px;
+	}
+
+  .headline {
+
+    	width: 550px;
+    	text-align: center;
+    	margin: 0 auto;
+	  	
+	  @include small-screen {
+		
+		  width: 100%;
+		  
+		  h2 {
+
+				font-size: 25px;
+			}
+
+			P {
+
+				width: 90%;
+				margin: 0 auto;
+				line-height: 18px;
+				overflow: hidden;
+
+			}
+		
+	}
+	  	@include very-small-screen {
+
+			width: 100%;
+
+
+			h2 {
+
+				font-size: 25;
+			}
+
+			P {
+
+				width: 60%;
+				margin: 0 auto;
+				line-height: 18px;
+
+			}
+
+		}
+	  
+	  @include meduim-screen {
+
+			width: 100%;
+		  
+
+			h2 {
+
+				font-size: 26;
+			}
+
+			P {
+
+				width: 80%;
+				margin: 0 auto;
+				line-height: 18px;
+				overflow: hidden;
+
+			}
+
+		}
+	  
+	  @include large-screen {
+		  
+		  h2 {
+			  
+			  font-size: 26px;
+		  }
+	  }
+
+	  
+    p {
+
+      color: $grayish-blue;
+	  margin-top: 30px;
+
+    }
+
+  }
+
+  .browsers {
+
+	  	display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+    	margin-top: 80px;
+	  
+	  @include small-screen {
+		  
+		  flex-direction: column;
+		   align-items: center;
+		  
+		  
+	  }
+	  
+	  @include very-small-screen {
+
+		  flex-direction: column;
+		  align-items: center;
+
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  flex-direction: column;
+		  align-items: center;
+	  }
+
+    .card {
+
+			width: 270px;
+			height: 360px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			border-color: whitesmoke;
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 20px;
+			box-shadow: 3px 3px 2px whitesmoke;
+      	padding: 0  0 20px 0;
+		
+		@include small-screen {
+			
+			height: 300px;
+			width: 240px;
+			
+			img {
+				
+				width: auto;
+				
+			}
+			
+	
+		}
+		
+		@include very-small-screen {
+
+			height: 300px;
+			width: 240px;
+		}
+
+      img:nth-of-type(1) {
+
+			margin: 20px 0 10px;
+
+			}
+      ul {
+
+  			list-style: none;
+  			margin-top: 10px;
+  			padding: 20px;
+		  	overflow: hidden;
+
+		  @include small-screen {
+			  
+			  overflow: hidden;
+		  }
+		  
+  			li:nth-of-type(1) {
+
+  				font-weight: 600;
+
+				@include very-small-screen {
+
+					font-size: 18px;
+				}
+				
+				@include small-screen {
+					
+					font-size: 17px;
+					
+				}
+
+  			}
+
+  			li:nth-of-type(2) {
+
+  				color: $grayish-blue;
+  				font-size: 1vw;
+  				margin-top: 5px;
+
+				@include very-small-screen {
+
+					font-size: 14px;
+				}
+				
+				@include small-screen {
+					
+					font-size: 14px;
+				}
+				
+				@include meduim-screen {
+					
+					font-size: 14px;
+				}
+				
+				@include larger-screen {
+					
+					font-size: 14px;
+				}
+  			}
+  		}
+
+      .dotted-line {
+
+        width: 260px;
+        margin: 30px 0 35px;
+
+      }
+
+      .install-btn {
+
+  			width: 200px;
+  			height: 40px;
+  			border-style: solid;
+  			border-radius: 5px;
+  			color: white;
+  			font-weight: 600;
+  			border-color: $soft-blue;
+  			background-color: $soft-blue;
+
+		  @include very-small-screen {
+
+			  height: 60px;
+		}
+
+  		}
+
+      .install-btn:hover {
+
+      			background-color: white;
+      			color: $soft-blue;
+      			cursor: pointer;
+      }
+
+    }
+
+    .firefox-add {
+
+      margin: 40px 0 0;
+
+		@include very-small-screen {
+
+			margin: 60px 0 60px 0;
+		}
+		
+		@include small-screen {
+			
+			margin: 60px 0 60px 0;
+		}
+		
+		@include meduim-screen {
+			
+			margin: 60px 0 60px 0;
+		}
+    }
+
+    .opera-add {
+
+			margin: 80px 0 0;
+
+		@include very-small-screen {
+
+			margin: 0;
+			
+		}
+		
+		@include small-screen {
+			
+			margin: 0;
+		}
+		
+		@include meduim-screen {
+			
+			margin: 0;
+		}
+		
+		}
+
+  }
+
+}

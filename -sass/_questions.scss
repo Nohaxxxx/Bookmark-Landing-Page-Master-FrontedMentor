@@ -1,0 +1,288 @@
+.quests {
+
+	margin-top: 150px;
+	text-align: center;
+
+	@include very-small-screen {
+
+		margin-top: 100px;
+	}
+	
+	@include meduim-screen {
+		
+		margin-top: 70px;
+	}
+		
+		
+}
+	
+  .headline {
+
+    	text-align: center;
+		width: 500px;
+		margin: 0 auto;
+	  
+	  @include small-screen {
+		  
+		  width: 100%;
+		  
+		  h2 {
+
+			 font-size: 25px;
+			  padding: 0 20px;
+
+		  }
+
+		  p {
+
+
+			  line-height: 18px;
+			  overflow: hidden;
+
+		  }
+	  }
+
+	  @include very-small-screen {
+
+		  width: 65%;
+
+
+		  h2 {
+
+			 font-size: 25px;
+			  padding: 0 20px;
+
+		  }
+
+		  p {
+
+
+			  line-height: 18px;
+
+		  }
+
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  h2 {
+			  
+			  font-size: 26px;
+			 
+		  }
+
+	  }
+
+    p {
+
+       color: $grayish-blue;
+       margin: 30px 0 60px 0;
+     }
+
+  }
+	.quest-4 {
+
+		border-bottom-style: solid;
+		border-color: lightgray;
+    	border-width: 1px;
+
+	}
+
+
+
+  .collapse {
+
+    width: 500px;
+    margin: 5px auto 0 auto;
+    border-top-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+		transition: .4s;
+	  
+	  @include small-screen {
+		  
+		  width: 90%;
+		  
+		  p {
+
+			  font-size: 18px;
+
+		  }
+	  }
+	  
+	  @include very-small-screen {
+
+		  width: 80%;
+
+		  p {
+
+			  font-size: 14px;
+
+		  }
+
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  width: 80%;
+		  
+	  }
+
+    p {
+
+			color: $very-dark-blue;
+			font-weight: 500;
+			padding-bottom: 10px;
+
+
+		}
+
+		p:hover {
+
+			color: $soft-red;
+			cursor: pointer;
+		}
+
+    .collapse-btn {
+
+			border-style: none;
+			background-color: white;
+			transition: all .2s linear;
+
+			i {
+
+				color: $soft-blue;
+				font-size: 1.5vw;
+				cursor: pointer;
+
+				@include small-screen {
+					
+					font-size: 16px;
+					
+				}
+				@include very-small-screen {
+
+					font-size: 16px;
+				}
+				
+				@include meduim-screen {
+					
+					font-size: 16px;
+				}
+				
+				@include large-screen {
+					
+					font-size: 16px;
+				}
+				
+				@include larger-screen {
+					font-size: 16px;
+				}	
+			}
+		}
+// rotate the button when clicked
+
+		.rotate {
+
+			transform: rotate(180deg);
+
+			i {
+
+				color: $soft-red;
+
+			}
+
+
+		}
+
+  }
+
+	.content-4 {
+
+			border-color: lightgray;
+    	border-width: 1px;
+			border-bottom-style: none;
+			p {
+
+				padding-bottom: 10px;
+			}
+	}
+  .content {
+
+		width: 500px;
+		margin: 0 auto;
+		color: $grayish-blue;
+		padding: 0 10px;
+		// display: none;
+		// visibility: hidden;
+		overflow: hidden;
+		max-height: 0;
+		text-align: left;
+		transition: max-height .2s ease-out;
+	  
+	  @include small-screen {
+		  
+		  width: 90%;
+		  
+		  P {
+
+			  line-height: 20px;
+			  font-size: 16px;
+			  padding-bottom: 10px;
+		  }
+
+			  
+	  }
+	  
+	  @include very-small-screen {
+
+		  width: 70%;
+
+
+		  P {
+
+			   line-height: 20px;
+			  font-size: 14px;
+		  }
+
+	  }
+	  
+	  @include meduim-screen {
+		  
+		  width: 80%;
+		  
+		  P {
+			  
+			  font-size: 16px;
+			 
+		  }
+	  }
+
+  }
+
+  .more-btn {
+
+    border-color: $soft-blue;
+    background-color: $soft-blue;
+    color: white;
+    font-family: $main-font;
+    width: 110px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 50px 0 0 0;
+	cursor: pointer;
+
+	  @include very-small-screen {
+
+		  margin: 50px 0 0 0;
+	  }
+ 
+  }
+
